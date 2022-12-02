@@ -1,0 +1,19 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+
+    {{#each fruits}}
+    <p>{{this}}</p>
+    {{/each}}
+<!-- fav fruits -->
+
+{{#ifEquals fav "carrot"}}
+<p>Yes you are carrot up</p>
+{{else}}
+<p>Please eat more carrot</p>
+{{/ifEquals}}
+
+
+{{/block}}
+
+{{/extends}}
